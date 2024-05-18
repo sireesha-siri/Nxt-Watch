@@ -58,7 +58,7 @@ export const BannerCloseButton = styled.button`
   font-size: 20px;
 `
 export const HomeComponent = styled.div`
-  background-color: ${props => (props.value === true ? '#f4f4f4' : '#181818')};
+  background-color: ${props => (props.value === true ? '#f9f9f9' : '#181818')};
   padding: 0;
   margin: 30px;
   flex-grow: 1;
@@ -84,7 +84,7 @@ export const SearchInputField = styled.input`
   width: 80%;
   height: 35px;
   font-size: 16px;
-  border: 1px solid ${props => (props.values === true ? '#cccccc' : '#181818')};
+  border: 1px solid #cccccc;
   outline: none;
   padding: 10px;
   background-color: transparent;
@@ -94,7 +94,7 @@ export const SearchButton = styled.button`
   height: 35px;
   width: 60px;
   background-color: ${props => (props.value === true ? '#f4f4f4' : '#181818')};
-  border: 1px solid ${props => (props.value === true ? '#cccccc' : '#181818')};
+  border: 1px solid #cccccc;
   color: ${props => (props.value === false ? '#f4f4f4' : '#181818')};
   outline: none;
 `
