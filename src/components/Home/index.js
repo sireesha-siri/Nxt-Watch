@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import {Link} from 'react-router-dom'
-import {formatDistanceToNow} from 'date-fns'
+// import {formatDistanceToNow} from 'date-fns'
 import Loader from 'react-loader-spinner'
 
 import {GrFormClose} from 'react-icons/gr'
@@ -173,6 +173,9 @@ class HomeRoute extends Component {
                                 </ChannelsViewsAndUpdatedTime>
                                 <PrimitiveDot as={GoPrimitiveDot} />
                                 <ChannelsViewsAndUpdatedTime>
+                                  {each.published_at}
+                                </ChannelsViewsAndUpdatedTime>
+                                {/* <ChannelsViewsAndUpdatedTime>
                                   {formatDistanceToNow(
                                     new Date(each.published_at),
                                     {
@@ -184,7 +187,7 @@ class HomeRoute extends Component {
                                     .slice(0, 3)
                                     .reverse()
                                     .join(' ')}
-                                </ChannelsViewsAndUpdatedTime>
+                                </ChannelsViewsAndUpdatedTime> */}
                               </ChannelViewAndUpdatedTimeContainer>
                             </VideoInformation>
                           </VideoTitleInformationContainer>

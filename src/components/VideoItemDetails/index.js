@@ -2,7 +2,7 @@ import {Component} from 'react'
 import Cookies from 'js-cookie'
 import ReactPlayer from 'react-player'
 import {GoPrimitiveDot} from 'react-icons/go'
-import {formatDistanceToNow} from 'date-fns'
+// import {formatDistanceToNow} from 'date-fns'
 import {BiLike, BiDislike, BiListPlus} from 'react-icons/bi'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
@@ -110,9 +110,10 @@ class VideoItemDetails extends Component {
                 <PrimitiveDot as={GoPrimitiveDot} />
                 <p>
                   {
-                    formatDistanceToNow(new Date(videoDetails.published_at))
+                    videoDetails.published_at
+                    /* formatDistanceToNow(new Date(videoDetails.published_at))
 
-                    /* {formatDistanceToNow(new Date(videoDetails.published_at), {
+                     {formatDistanceToNow(new Date(videoDetails.published_at), {
                     addSuffix: true,
                   })
                     .split(' ')

@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import {Link} from 'react-router-dom'
-import {formatDistanceToNow} from 'date-fns'
+// import {formatDistanceToNow} from 'date-fns'
 import Loader from 'react-loader-spinner'
 
 import {GoPrimitiveDot} from 'react-icons/go'
@@ -131,7 +131,12 @@ class TrendingRoute extends Component {
                                 {each.view_count} views
                               </ChannelsViewsAndUpdatedTime>
                               <PrimitiveDot as={GoPrimitiveDot} />
+
                               <ChannelsViewsAndUpdatedTime>
+                                {each.published_at}
+                              </ChannelsViewsAndUpdatedTime>
+
+                              {/* <ChannelsViewsAndUpdatedTime>
                                 {
                                   formatDistanceToNow(
                                     new Date(each.published_at),
@@ -147,9 +152,9 @@ class TrendingRoute extends Component {
                                   .reverse()
                                   .slice(0, 3)
                                   .reverse()
-                                  .join(' ')} */
+                                  .join(' ')} 
                                 }
-                              </ChannelsViewsAndUpdatedTime>
+                              </ChannelsViewsAndUpdatedTime> */}
                             </ChannelViewAndUpdatedTimeContainer>
                           </VideoInformation>
                         </VideoTitleInformationContainer>

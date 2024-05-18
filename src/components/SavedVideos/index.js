@@ -1,7 +1,7 @@
 import {HiFire} from 'react-icons/hi'
 import {Link} from 'react-router-dom'
 import {GoPrimitiveDot} from 'react-icons/go'
-import {formatDistanceToNow} from 'date-fns'
+// import {formatDistanceToNow} from 'date-fns'
 
 import Header from '../Header'
 import SideBar from '../SideBar'
@@ -97,9 +97,14 @@ const SavedVideos = () => (
                                       {each.view_count} views
                                     </ChannelsViewsAndUpdatedTime>
                                     <PrimitiveDot as={GoPrimitiveDot} />
+
                                     <ChannelsViewsAndUpdatedTime>
+                                      {each.published_at}
+                                    </ChannelsViewsAndUpdatedTime>
+
+                                    {/* <ChannelsViewsAndUpdatedTime>
                                       {/* each.published_at */}
-                                      {/* {formatDistanceToNow(
+                                    {/* {formatDistanceToNow(
                                         new Date(each.published_at),
                                         {
                                           addSuffix: true,
@@ -109,12 +114,12 @@ const SavedVideos = () => (
                                         .reverse()
                                         .slice(0, 3)
                                         .reverse()
-                                        .join(' ')} */}
+                                        .join(' ')} 
 
                                       {formatDistanceToNow(
                                         new Date(each.published_at),
                                       )}
-                                    </ChannelsViewsAndUpdatedTime>
+                                    </ChannelsViewsAndUpdatedTime> */}
                                   </ChannelViewAndUpdatedTimeContainer>
                                 </VideoInformation>
                               </VideoTitleInformationContainer>
