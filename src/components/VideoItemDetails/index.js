@@ -109,12 +109,16 @@ class VideoItemDetails extends Component {
                 <p>{videoDetails.view_count} Views </p>
                 <PrimitiveDot as={GoPrimitiveDot} />
                 <p>
-                  {formatDistanceToNow(new Date(videoDetails.published_at), {
+                  {
+                    formatDistanceToNow(new Date(videoDetails.published_at))
+
+                    /* {formatDistanceToNow(new Date(videoDetails.published_at), {
                     addSuffix: true,
                   })
                     .split(' ')
                     .slice(1)
-                    .join(' ')}
+                    .join(' ')} */
+                  }
                 </p>
               </ViewsAndUpdatedTimeContainer>
 

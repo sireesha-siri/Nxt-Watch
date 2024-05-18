@@ -132,7 +132,12 @@ class TrendingRoute extends Component {
                               </ChannelsViewsAndUpdatedTime>
                               <PrimitiveDot as={GoPrimitiveDot} />
                               <ChannelsViewsAndUpdatedTime>
-                                {formatDistanceToNow(
+                                {
+                                  formatDistanceToNow(
+                                    new Date(each.published_at),
+                                  )
+
+                                  /* {formatDistanceToNow(
                                   new Date(each.published_at),
                                   {
                                     addSuffix: true,
@@ -142,7 +147,8 @@ class TrendingRoute extends Component {
                                   .reverse()
                                   .slice(0, 3)
                                   .reverse()
-                                  .join(' ')}
+                                  .join(' ')} */
+                                }
                               </ChannelsViewsAndUpdatedTime>
                             </ChannelViewAndUpdatedTimeContainer>
                           </VideoInformation>

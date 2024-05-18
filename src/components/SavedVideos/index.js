@@ -99,7 +99,7 @@ const SavedVideos = () => (
                                     <PrimitiveDot as={GoPrimitiveDot} />
                                     <ChannelsViewsAndUpdatedTime>
                                       {/* each.published_at */}
-                                      {formatDistanceToNow(
+                                      {/* {formatDistanceToNow(
                                         new Date(each.published_at),
                                         {
                                           addSuffix: true,
@@ -109,7 +109,11 @@ const SavedVideos = () => (
                                         .reverse()
                                         .slice(0, 3)
                                         .reverse()
-                                        .join(' ')}
+                                        .join(' ')} */}
+
+                                      {formatDistanceToNow(
+                                        new Date(each.published_at),
+                                      )}
                                     </ChannelsViewsAndUpdatedTime>
                                   </ChannelViewAndUpdatedTimeContainer>
                                 </VideoInformation>

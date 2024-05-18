@@ -47,7 +47,6 @@ export const NavItemButton = styled.button`
 `
 
 export const ProfileImage = styled.img`
-  display: none;
   @media screen and (min-width: 768px) {
     display: block;
     width: 35px;
