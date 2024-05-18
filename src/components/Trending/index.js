@@ -132,7 +132,6 @@ class TrendingRoute extends Component {
                               </ChannelsViewsAndUpdatedTime>
                               <PrimitiveDot as={GoPrimitiveDot} />
                               <ChannelsViewsAndUpdatedTime>
-                                {/* each.published_at */}
                                 {formatDistanceToNow(
                                   new Date(each.published_at),
                                   {
