@@ -51,6 +51,10 @@ export const ProfileImage = styled.img`
     display: block;
     width: 35px;
   }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 `
 
 export const HamburgerPopup = styled.div`
